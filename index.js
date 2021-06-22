@@ -1,11 +1,4 @@
-
-
-console.log(
-  "This console.log() fires when index.js loads - before DOMContentLoaded is triggered"
-);  
-
-let btn = document.getElementById('text')
-
-btn.addEventListener('click', (e) =>){
-    console.log("This console.log() fires when index.js loads - before DOMContentLoaded is triggered")
-}
+document.addEventListener("DOMContentLoaded", function() {
+let vari = document.getElementById('text')
+vari.innerHTML = "This is really cool!";
+});
